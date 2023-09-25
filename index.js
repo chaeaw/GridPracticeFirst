@@ -1,5 +1,6 @@
 (function () {
   const get = (target) => document.querySelector(target);
+  const getAll = (target) => document.querySelectorAll(target);
 
   function getClock() {
     const $time = get(".top-bar__time");
@@ -9,8 +10,33 @@
     $time.innerText = `${hour}:${minute}`;
   }
 
+  const $menuList = get(".menu__list");
+  const $menuItems = getAll(".menu__list-item");
+
   window.addEventListener("DOMContentLoaded", () => {
     getClock();
     setInterval(getClock, 3000);
+
+    $menuItems.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        const $activeItem = $menuList.querySelector(".active");
+        if ($activeItem) $activeItem.classList.remove("active");
+        let target;
+
+        switch (e.target.nodeName) {
+          case "LI":
+            target = e.target;
+            break;
+          case "A":
+            target = e.target.parentNode;
+            break;
+          case "I":
+            target = e.target.parentNode.parentNode;
+            break;
+        }
+
+        target.classList.add("active");
+      });
+    });
   });
 })();
