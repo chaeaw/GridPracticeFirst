@@ -203,11 +203,11 @@ body {
   &::before {
     content: "";
     position: absolute;
-    width: 32px;
+    width: 24px;
     height: 100%;
     top: 0;
     right: -2px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), #000);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.01), #000);
   }
   .header__wrap {
     padding: 24px 0;
