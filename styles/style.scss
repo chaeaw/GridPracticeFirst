@@ -7,14 +7,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: "Montserrat", "Merriweather", sans-serif;
+  font-family: "Montserrat", "Libre Baskerville", sans-serif;
 }
 
 .phone {
   position: relative;
   background-color: #000;
   margin: 0 auto;
-  max-width: 420px;
+  max-width: 410px;
   height: 100%;
   padding: 20px 16px;
   border-radius: 50px;
@@ -45,7 +45,7 @@ body {
 }
 
 .title {
-  font-family: "Merriweather";
+  font-family: "Libre Baskerville";
 }
 
 .top-bar {
@@ -56,6 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   color: #fff;
+  font-size: 18px;
 
   .top-bar__time {
     letter-spacing: 1px;
@@ -65,7 +66,12 @@ body {
   .top-bar__info {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
+  }
+
+  .top-bar__battery {
+    margin-top: 2px;
+    font-size: 20px;
   }
 }
 
@@ -79,8 +85,8 @@ body {
     #f1f3d4 7%,
     #cde0fe 50%
   );
-  border-radius: 22px;
-  padding: 16px 20px;
+  border-radius: 28px;
+  padding: 8px 16px;
 
   .start__top {
     display: flex;
@@ -205,10 +211,13 @@ body {
     gap: 10px;
     width: max-content;
     color: #fff;
+
     .header__list-item {
       border: 1px solid rgba($color: #fff, $alpha: 0.5);
       padding: 8px 12px;
       border-radius: 20px;
+      letter-spacing: 0.2px;
+      cursor: pointer;
     }
 
     .header__list-item--inverted {
@@ -234,6 +243,8 @@ body {
     border-radius: 22px;
     background: #fff;
 
+    cursor: pointer;
+
     .card__title {
       font-size: 28px;
       letter-spacing: 0.5px;
@@ -255,7 +266,6 @@ body {
         border-radius: 16px;
         font-weight: 600;
         color: #000;
-
         letter-spacing: 0.4px;
       }
       .card__price {
@@ -305,7 +315,7 @@ body {
 .menu {
   position: fixed;
   left: 50%;
-  bottom: 16px;
+  bottom: 34px;
   transform: translateX(-50%);
 
   padding: 8px 10px;
