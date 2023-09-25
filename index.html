@@ -3,8 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.scss" />
-    <title>Vite App</title>
+    <title>Grid Practice First</title>
   </head>
-  <body></body>
+  <body>
+    <div class="phone">
+      <div class="phone__wrap">
+        <div class="top-bar">
+          <div class="top-bar__time"></div>
+          <div class="top-bar__info">
+            <i class="xi-signal-4 top-bar__signal"></i>
+            <i class="top-bar__wifi xi-wifi"></i>
+            <i class="xi-battery-50 top-bar__battery"></i>
+          </div>
+        </div>
+        <div class="start">
+          <div class="start__top">
+            <div class="start__profile">
+              <div class="start__pic">
+                <i class="xi-user"></i>
+              </div>
+              <div class="start__name">Timothy Snyder</div>
+            </div>
+            <div class="start__more-btn"><i class="xi-ellipsis-h"></i></div>
+          </div>
+          <div class="start__contents">
+            <div class="start__title title">
+              <h2>The Making of Modern Ukarine</h2>
+            </div>
+            <div class="start__progress">
+              <span class="start__progress-title">In progress</span>
+              <span class="start__progress-num">63%</span>
+              <div class="start__progress-bar"></div>
+              <div class="start__progress-date">
+                <span class="date-start"> Sep 10, 22 </span>
+                <span class="date-goal"> Dec 10, 22 </span>
+              </div>
+            </div>
+          </div>
+          <div class="start__button" role="button">Continue Learning</div>
+        </div>
+        <header class="header">
+          <ul class="header__list">
+            <li class="header__list-item header__list-item--inverted">All</li>
+            <li class="header__list-item">Advertising</li>
+            <li class="header__list-item">Dev & Research</li>
+            <li class="header__list-item">Illustration</li>
+            <li class="header__list-item">UX & UI Design</li>
+          </ul>
+        </header>
+        <div class="cards">
+          <div class="cards__card">
+            <h2 class="card__title title title">The Making of Modern Art</h2>
+            <div class="card__footer">
+              <span class="card__price free">Free</span>
+              <span class="card__length">2</span>
+            </div>
+          </div>
+          <div class="cards__card">
+            <h2 class="card__title title">Mobile Interfaces Advanced</h2>
+            <div class="card__footer">
+              <span class="card__price">Free</span
+              ><span class="card__length">2</span>
+            </div>
+          </div>
+          <div class="cards__card">
+            <h2 class="card__title title">Graphic Design. Professium</h2>
+            <div class="card__footer">
+              <span class="card__price">$199/month</span
+              ><span class="card__length">9 months</span>
+            </div>
+          </div>
+          <div class="cards__card">
+            <h2 class="card__title title">Web Design Junior</h2>
+            <div class="card__footer">
+              <span class="card__price free">Free</span
+              ><span class="card__length">3</span>
+            </div>
+          </div>
+          <div class="cards__card">
+            <h2 class="card__title title">Inclulsive Web Design</h2>
+            <div class="card__footer">
+              <span class="card__price">$99/month</span
+              ><span class="card__length">3</span>
+            </div>
+          </div>
+          <div class="cards__card">
+            <h2 class="card__title title">Machine Learning Professium</h2>
+            <div class="card__footer">
+              <span class="card__price">$199/month</span
+              ><span class="card__length">8</span>
+            </div>
+          </div>
+        </div>
+        <aside class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item active">
+              <a href="#" role="button">
+                <i class="xi-home-o"></i>
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#">
+                <i class="xi-search"></i>
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#">
+                <i class="xi-user"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
 </html>
